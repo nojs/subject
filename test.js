@@ -8,8 +8,6 @@
 var Subj=require("no/subject").Subj
 
 //define something
-//.def actually is an alias for .clone
-
 var S0=Subj.def({
   name:"Something",
   whoami:function(){
@@ -42,7 +40,5 @@ var S2=S1.def({
 var s2=S2.new({addname:"No"})
 
 expect(s2.whoami(),"Other No One")
-
-
 ///```
 
