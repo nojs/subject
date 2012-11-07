@@ -5,9 +5,9 @@ Ubersimple prototypal {Io-lang|Lua}-style inheritance in js
 
 ```javascript
 
-var Subj=require("no/subject").Subj
+var Subj=require("./subject").Subj
 
-//define something
+```define something```
 var S0=Subj.def({
   name:"Something",
   whoami:function(){
