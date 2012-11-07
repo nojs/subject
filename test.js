@@ -5,7 +5,7 @@
 
 ///```javascript
 
-var Subj=require("no/subject").Subj
+var Subj=require("./subject").Subj
 
 //define something
 var S0=Subj.def({
