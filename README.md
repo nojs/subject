@@ -7,26 +7,38 @@ Ubersimple prototypal {Io-lang|Lua}-style inheritance in js
 
 var Subj=require("./subject").Subj
 
-```define something```
+
+```
+define something
+```javascript
 var S0=Subj.def({
   name:"Something",
   whoami:function(){
     return this.name}})
 
-//instantiate it
+
+```
+instantiate it
+```javascript
 var s0=S0.new({
   name:"Something1"})
 
 expect(s0.whoami(),"Something1")
 
 
-//inherit
+
+```
+inherit
+```javascript
 var S1=S0.def({
   name:"Other",
   whoami:function(){
     return S0.whoami.apply(this,arguments)+" One"}})
 
-//instantiate inherited
+
+```
+instantiate inherited
+```javascript
 var s1=S1.new({
   name:"Another"})
 

@@ -7,8 +7,7 @@ test: all
 	node test.js
 
 README.md: test.js
-	sed s:^///:: > $@ < $<
-
+	sed -e s:///:: -e 's:^//`\(.*\)$$:\n```\n\1\n```javascript:'  > $@ < $<
 
 
 
