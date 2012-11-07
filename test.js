@@ -1,9 +1,9 @@
 
 
-Ubersimple prototypal {Io-lang|Lua}-style inheritance in js
-================
+///Ubersimple prototypal {Io-lang|Lua}-style inheritance in js
+///================
 
-```javascript
+///```javascript
 
 var Subj=require("no/subject").Subj
 
@@ -44,5 +44,5 @@ var s2=S2.new({addname:"No"})
 expect(s2.whoami(),"Other No One")
 
 
-```
+///```
 
