@@ -3,8 +3,7 @@
 .PHONY: all
 all: README.md
 
-.PHONY: test
-test:
+test: all
 	node test.js
 
 README.md: test.js
