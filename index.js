@@ -13,8 +13,6 @@ var Subj,Subject=Subj={
        (instance.__proto__=this,instance):
        ({__proto__:this})))}}
 
-Subj.clone=Subj.def
-
 module.exports={
   Subj:Subj,
   Subject:Subj
