@@ -19,6 +19,7 @@ var s0=S0.new({
 
 expect(s0.whoami(),"Something1")
 
+
 //inherit
 var S1=S0.def({
   name:"Other",
@@ -29,8 +30,8 @@ var S1=S0.def({
 var s1=S1.new({
   name:"Another"})
 
-
 expect(s1.whoami(),"Another One")
+
 
 var S2=S1.def({
   init:function(options){
